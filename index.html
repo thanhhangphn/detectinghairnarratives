@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detecting Hair Narratives</title>
+
+	<style>
+
+        body {
+            background-color: #FAEAD4;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            color: #9E4C52;
+            display: inline-block;
+            margin: 1%;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        .thumbnail {
+            position: relative;
+            border-radius: 2%;
+            width: 100%;
+        }
+
+        .gallery {
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .object {
+            width: 100%;
+            padding: 5%;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 5%;
+            width: 100%;
+        }
+
+        a {
+            color: #673955;
+        }
+
+        h1 {
+            color: #8C4653;
+        }
+
+        p {
+            color: #8C4653;
+        }
+
+        .intro {
+            width: 100vw;
+            height: 75vh;
+            text-align: center;
+        }
+
+        .contact{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .contact_box{
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 5%;
+            height: 150%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+  <!-- ______________________________________________________________________________________ -->
+<body> 
+    <div class="intro">
+        <h1>Detecting Hair Narratives</h1>
+        <h2 style="font-weight: 400; font-style: italic;">African American Hair representation on New York Times</h2>
+    </div>
+
+    <div class="gallery">
+
+        <div class="object">
+            <img class="thumbnail" src="nyt_api.png"></img>
+            <h3>New York Times' API</h3>
+        </div>
+
+        <div class="object">
+            <img class="thumbnail" src="python.png"></img>
+            <h3>Python in VS Code to collect data</h3>
+        </div>
+
+        <div class="object">
+            <img class="thumbnail" src="raw_results.png"></img>
+            <h3>Raw result of 1691 articles from 2010 to 2023</h3>
+        </div>
+
+        <div class="object">
+            <img class="thumbnail" src="ggsheet.png"></img>
+            <h3><a href="https://docs.google.com/spreadsheets/d/1PxrkTaYmEZvlCDqwkv6rkvO4NxUBbElj3ImnRWQOMtM/edit?usp=sharing" >Google Sheet Data [Click to view]</a></h3>
+        </div>
+
+        <div class="object">
+            <img class="thumbnail" src="textfiles_years.png"></img>
+            <h3>Keywords mapped to years</h3>
+        </div>
+
+        <div class="object">
+            <iframe style='width: 100%; height: 800px;' src='https://voyant-tools.org/tool/Trends/?view=Trends&query=school&query=discrimination&query=fashion&query=girls&query=theater&query=race&query=ethnicity&query=movie&withDistributions=raw&bins=20&corpus=114baddadf0c6d99b3d0f695caa9bdc1'></iframe>
+            <h3>Visualize keyword frequencies over years</h3>
+        </div>
+
+        <div class="object">
+            <iframe style='width: 100%; height: 800px;' src='https://voyant-tools.org/?view=Cirrus&stopList=keywords-3497a98b34b5541a07581ff1193862e2&corpus=114baddadf0c6d99b3d0f695caa9bdc1'></iframe>
+            <h3>Visualize keyword frequencies within 5-year phases</h3>
+        </div>
+
+</body>
+</html>
